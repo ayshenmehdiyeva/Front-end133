@@ -24,6 +24,7 @@ td{
 
 
 ul {
+    list-style: square;
     box-sizing: border-box;
     background-color: #F0FFF8;
     padding: 30PX;
