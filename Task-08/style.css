@@ -4,8 +4,6 @@
 
 body{
     font-family: 'Lato', sans-serif;
-    list-style: none;
-    text-decoration: none;
 }
 
 .container{
@@ -40,18 +38,27 @@ margin-top: -20px;
     color:#b12704;
 }
 
-.buy, .add{
+.buy,.add{
 color: #853ae0;
 font-weight: bold;
 text-decoration: none;
 padding: 10px;
+transition: all 0.8s ease;
 }
 
+.add:hover{
+ text-decoration: underline; 
+}
+ .buy:hover{
+    text-decoration: underline; 
+ }
+   
 .back{
     font-size: 12px;
     color: #000;
     display: block;
     padding: 10px;
+    font-style: italic;
 }
 
 
