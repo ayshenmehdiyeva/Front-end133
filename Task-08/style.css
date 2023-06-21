@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+
+body{
+    font-family: 'Lato', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product{
+    width: 400px;
+    flex-direction: column;
+    gap: 5px;
+    border: 1px solid #a1a1a1;
+    margin: 10px;
+    padding: 20px;
+}
+
+img{
+    object-fit: contain;
+}
+ul{
+     list-style: none;
+     padding: 20px;
+     background-color: #d1d1d174;
+}
+
+.company{
+margin-top: -20px;
+}
+.price{
+    color:#b12704;
+}
+
+.buy, .add{
+color: #853ae0;
+font-weight: bold;
+text-decoration: none;
+padding: 10px;
+}
+
+.back{
+    font-size: 12px;
+    color: #000;
+    display: block;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
