@@ -41,7 +41,9 @@ h3{
     font-weight: 600;
     text-align: center;
     margin: 0;
-    padding: 0;
+    padding: 0; 
+    transition: all .5s ease-in;
+   
 }
 
 .col-3{
@@ -49,14 +51,15 @@ h3{
     padding-bottom: 25px;
     position: relative;
     cursor: pointer;
-    transition: all .5s ease-in;
+   /* margin-right: 20px;*/
+    box-shadow: 10px 10px 10px rgb(red, green, blue, 0.5), -10px -10px 10px rgb(red, green, blue, 0.5);
 }
 
 .icon i{
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    background-color: #2d2d2dc9;
+    background-color: #2d2d2dd6;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,6 +96,7 @@ position: absolute;
 .icon i:hover{
     background-color: #ffa62b;
 }
+
 
 .col-3:hover{
 background-color: #ffa62b;
