@@ -15,6 +15,9 @@ flex-direction: column;
     justify-content: center;
 }
 
+.justify-content-start {
+    justify-content:flex-start;
+}
 .align-items-center{
      align-items: center;
 }
@@ -26,6 +29,10 @@ flex-direction: column;
 
 .mb{
 margin-bottom: 3rem;
+}
+
+.mt{
+margin-top: 1rem;
 }
 
 .flex-wrap{
@@ -86,7 +93,9 @@ position: absolute;
     margin-left: 10px;
 }
 
-
+.gap{
+    gap: 13px;
+}
 
 
 

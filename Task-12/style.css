@@ -3,7 +3,9 @@
 body{
     background-color: #f8f8f8;
     font-family: "Poppins", Arial, sans-serif;
+    box-sizing: border-box;
 }
+
 
 .date{
     width: 68px;
@@ -34,6 +36,97 @@ h2{
     color: #1f1f1fc9;
 }
 
-/* .content{
+.date{
+padding: 10px;
+box-sizing: border-box;
+}
+
+.date h3{
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+.date p{
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+.content{
     background-color: #fff;
- */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 415px;
+    box-sizing: border-box;
+}
+
+.content h3{
+    font-size: 24px;
+    color: #000;
+    font-weight: 400;
+}
+
+
+.content p{
+    margin-top: -10px;
+    font-size: 16px;
+    color: #999;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+.fa-solid{
+    color: #ffa62b;
+    margin-right: -8px;
+}
+
+.admin{
+font-size: 13px;
+color: #999;
+font-weight: 600;
+}
+
+.c-3{
+    font-size: 13px;
+    color:#ffa62b;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
