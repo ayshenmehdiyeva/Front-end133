@@ -1,8 +1,13 @@
 .container{
-    width: 100%;
+    /* width: 100%; */
     max-width: 1440px;
     margin: 0 auto;
 }
+
+.row{
+    display: flex;
+}
+
 .d-flex{
     display: flex;  
 }
@@ -50,7 +55,7 @@ margin-top: 1rem;
     width: calc(100%/12*3);
 }
 .col-4{
-    width: calc(100%/12*4);
+    width: calc(100%/12*3.5);
 }
 .col-5{
     width: calc(100%/12*5);

@@ -43,7 +43,7 @@ h3{
     margin: 0;
     padding: 0; 
     transition: all .5s ease-in;
-   
+
 }
 
 .col-3{
@@ -52,7 +52,7 @@ h3{
     position: relative;
     cursor: pointer;
    /* margin-right: 20px;*/
-    box-shadow: 10px 10px 10px rgb(red, green, blue, 0.5), -10px -10px 10px rgb(red, green, blue, 0.5);
+   box-shadow: 10px 10px 10px #c3c3c324, -10px -10px 10px #c3c3c325;
 }
 
 .icon i{
