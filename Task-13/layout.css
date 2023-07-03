@@ -1,0 +1,107 @@
+.container{
+    margin: 0 auto;
+    width: 75%;
+    max-width: 1440px;
+    min-width: 300px;
+    margin: auto;
+
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.d-flex{
+    display: flex;  
+}
+
+.flex-column{
+flex-direction: column;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.justify-content-start {
+    justify-content:flex-start;
+}
+.align-items-center{
+     align-items: center;
+}
+
+
+.justify-content-between{
+        justify-content: space-between;
+}
+
+.mb{
+margin-bottom: 3rem;
+}
+
+.mt{
+margin-top: 1rem;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.col-1{
+    width: calc(100%/12*1);
+}
+
+.col-2{
+    width: calc(100%/12*1.8);
+}
+.col-3{
+    width: calc(100%/12*3);
+}
+.col-4{
+    width: calc(100%/12*3.7);
+}
+.col-5{
+    width: calc(100%/12*5);
+}
+.col-6{
+    width: calc(100%/12*6);
+}
+.col-7{
+    width: calc(100%/12*7);
+}
+.col-8{
+    width: calc(100%/12*8);
+}
+.col-9{
+    width: calc(100%/12*9);
+}
+.col-10{
+    width: calc(100%/12*10);
+}
+.col-11{
+    width: calc(100%/12*11);
+}
+.col-12{
+    width: calc(100%);
+}
+
+.position-relative{
+    position: relative;
+}
+
+.position-absolute{
+position: absolute;
+}
+
+.object-fix{
+    object-fit: cover;
+}
+
+.mr{
+    margin-left: 10px;
+}
+
+.gap{
+    gap: 13px;
+}
