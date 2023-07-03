@@ -5,7 +5,7 @@ body{
     background: #f8f8f8;
 }
 
-.col-12 p{
+.heading p{
     font-size: 16px;
     display: block;
     margin-bottom: 5px;
@@ -33,7 +33,7 @@ h3{
     text-align: center;
 }
 
-.col-3 p{
+.box p{
     font-size: 14px;
     display: block;
     margin-bottom: 5px;
@@ -46,7 +46,7 @@ h3{
 
 }
 
-.col-3{
+.box{
     background-color: #fff;
     padding-bottom: 25px;
     position: relative;
@@ -89,7 +89,7 @@ position: absolute;
     color: #fff;
 }
 
-.col-3:hover .icon i {
+.box :hover .icon i {
     opacity: 1;
 }
 
@@ -98,6 +98,10 @@ position: absolute;
 }
 
 
-.col-3:hover{
+.box:hover{
 background-color: #ffa62b;
+}
+
+.box:hover p{
+    color: #fff;
 }

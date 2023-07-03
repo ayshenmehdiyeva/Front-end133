@@ -63,9 +63,6 @@ object-fit: cover;
     width: calc(100%/12*2.7);
 }
 
-.col-3:hover p{
-    color: #fff;
-}
 
 .col-4 {
     width: calc(100%/12*4);
@@ -99,6 +96,6 @@ object-fit: cover;
     width: calc(100%/12*11);
 }
 
-.col-1 {
+.col-12 {
     width: calc(100%);
 }
