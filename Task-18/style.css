@@ -21,7 +21,11 @@ body{
      vertical-align: middle;
  }
  
- 
+ h5{
+    font-size: 50px;
+    font-weight: 400;
+ }
+
  h2{
      font-size: 50px;
      font-weight: 400;
@@ -33,5 +37,12 @@ body{
  p{
      font-size: 20px;
      font-weight: 400;
+ }
+ .card-title{
+    font-size: 32px;
+ }
+
+ .card-text{
+    font-size: 18px;
  }
  /* "data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw== */
