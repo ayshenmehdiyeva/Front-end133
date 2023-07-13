@@ -58,20 +58,6 @@ font-family: 'Tahoma', sans-serif;
     justify-content: space-between;
     align-items: center;
 }
-/*
-.green{
-  background-color: green;
-}
-
-.black{
-background-color: black;
-}
-
-.blue{
- background-color: blue;
-}
-*/
-
 
 .date div:nth-child(2) img{
     margin-right: 10px;
