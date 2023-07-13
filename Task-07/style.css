@@ -21,6 +21,9 @@
     justify-content: center;
     padding-left: 20px;
     margin-bottom: 20px;
+    background-size: cover;
+    background-clip: border-box;
+    background-position: center;
 }
 
 .number{
@@ -55,7 +58,7 @@ font-family: 'Tahoma', sans-serif;
     justify-content: space-between;
     align-items: center;
 }
-
+/*
 .green{
   background-color: green;
 }
@@ -67,11 +70,24 @@ background-color: black;
 .blue{
  background-color: blue;
 }
+*/
 
 
 .date div:nth-child(2) img{
     margin-right: 10px;
 }
 
+.image-1{
+    background-image: url(40e30132-7f97-4279-bad6-4622576e2276.jpg);
+}
 
+.image-2{
+    background-image: url(8bb89e18-f850-4039-a754-e1c57acfa3db\ \(1\).jpg);
+}
 
+.image-3{
+    background-image: url(50a161fa-5b41-4f83-9b5c-191c94271bf3\ \(2\)_clipdrop-enhance\ \(1\).jpg);
+}
+.image-4{
+    background-image: url(095cb943-2665-4027-8b99-f7e45f829f8d_clipdrop-enhance\ \(1\)\ \(1\)_clipdrop-enhance\ \(1\).jpg);
+}
