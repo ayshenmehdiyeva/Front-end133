@@ -42,7 +42,7 @@ body {
     width: 260px;
     border: 1px solid #111;
     position: relative;
-    transition: all .2s ease-out;
+    transition: all 4s ease-out;
 }
 
 .image:hover{
@@ -58,9 +58,9 @@ body {
 .image-1-1 {
     animation: move1;
     animation-delay: 1s;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-fill-mode: forwards;
-    transition: all 2s ease-out;
+    transition: all 4s ease-out;
 }
 
 @keyframes move1 {
@@ -91,9 +91,9 @@ body {
 .image-3-3 {
     animation: move2;
     animation-delay: 1s;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-fill-mode: forwards;
-    transition: all 2s ease-out;
+    transition: all 4s ease-out;
 }
 
 @keyframes move2 {
@@ -122,9 +122,9 @@ body {
 .image-2-1 {
     animation: move3;
     animation-delay: 1s;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-fill-mode: forwards;
-    transition: all 2s ease-out;
+    transition: all 4s ease-out;
 }
 
 @keyframes move3 {
@@ -153,9 +153,9 @@ body {
 .image-3-1 {
     animation: move6;
     animation-delay: 1s;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-fill-mode: forwards;
-    transition: all 2s ease-out;
+    transition: all 4s ease-out;
 }
 
 @keyframes move6 {
@@ -183,9 +183,9 @@ body {
 .image-3-2 {
     animation: move7;
     animation-delay: 1s;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-fill-mode: forwards;
-    transition: all 2s ease-out;
+    transition: all 4s ease-out;
 }
 
 @keyframes move7 {
@@ -213,9 +213,9 @@ body {
 .image-2-2 {
     animation: move5;
     animation-delay: 1s;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-fill-mode: forwards;
-    transition: all 2s ease-out;
+    transition: all 4s ease-out;
 }
 
 @keyframes move5 {
