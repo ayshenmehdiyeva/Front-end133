@@ -1,6 +1,6 @@
 body {
     box-sizing: border-box;
-    background-color: rgb(26, 154, 201);
+    background-color: #1a9ac9;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,10 +18,11 @@ body {
 .box {
     width: 780px;
     height: 450px;
-    background-image: linear-gradient(to bottom, #49aaff #ffffff);
+    background-image: linear-gradient(to top, #2c96b9, #1a9ac9);
     position: relative;
     box-sizing: border-box;
     padding: 0;
+    border: 1px solid #fff;
 }
 
 .heading {
@@ -40,7 +41,7 @@ body {
 .image {
     height: 150px;
     width: 260px;
-    border: 1px solid #111;
+    border: 1px solid #ffffff;
     position: relative;
     transition: all 4s ease-out;
 }
