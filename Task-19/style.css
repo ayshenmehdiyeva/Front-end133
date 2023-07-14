@@ -18,7 +18,7 @@ body {
 .box {
     width: 780px;
     height: 450px;
-    background-color: black;
+    background-image: linear-gradient(to bottom, #49aaff #ffffff);
     position: relative;
     box-sizing: border-box;
     padding: 0;
@@ -42,7 +42,7 @@ body {
     width: 260px;
     border: 1px solid #111;
     position: relative;
-    transition: all .4s ease;
+    transition: all .2s ease-out;
 }
 
 .image:hover{
@@ -57,10 +57,10 @@ body {
 
 .image-1-1 {
     animation: move1;
-    animation-delay: 1.2s;
+    animation-delay: 1s;
     animation-duration: 2s;
     animation-fill-mode: forwards;
-    transition: all 2s ease-in;
+    transition: all 2s ease-out;
 }
 
 @keyframes move1 {
@@ -78,20 +78,22 @@ body {
 
     75% {
         left: 190px;
+        top: 0px;
     }
 
     100% {
         left: 260px;
+        top: 150px;
     }
 }
 
 .image-1-2,
 .image-3-3 {
     animation: move2;
-    animation-delay: 1.2s;
+    animation-delay: 1s;
     animation-duration: 2s;
     animation-fill-mode: forwards;
-    transition: all 2s ease-in;
+    transition: all 2s ease-out;
 }
 
 @keyframes move2 {
@@ -119,10 +121,10 @@ body {
 .image-1-3,
 .image-2-1 {
     animation: move3;
-    animation-delay: 1.2s;
+    animation-delay: 1s;
     animation-duration: 2s;
     animation-fill-mode: forwards;
-    transition: all 2s ease-in;
+    transition: all 2s ease-out;
 }
 
 @keyframes move3 {
@@ -148,13 +150,12 @@ body {
 }
 
 .image-2-3,
-.image-3-1,
-.image-3-2 {
+.image-3-1 {
     animation: move6;
-    animation-delay: 1.2s;
+    animation-delay: 1s;
     animation-duration: 2s;
     animation-fill-mode: forwards;
-    transition: all 2s ease;
+    transition: all 2s ease-out;
 }
 
 @keyframes move6 {
@@ -179,12 +180,42 @@ body {
     }
 }
 
-.image-2-2 {
-    animation: move5;
-    animation-delay: 1.2s;
+.image-3-2 {
+    animation: move7;
+    animation-delay: 1s;
     animation-duration: 2s;
     animation-fill-mode: forwards;
-    transition: all 2s ease-in;
+    transition: all 2s ease-out;
+}
+
+@keyframes move7 {
+    0% {
+        bottom: 0px;
+    }
+
+    25% {
+        bottom: 60px;
+    }
+
+    50% {
+        bottom: 120px;
+    }
+
+    75% {
+        bottom: 240px;
+    }
+
+    100% {
+        bottom: 300px;
+    }
+}
+
+.image-2-2 {
+    animation: move5;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    transition: all 2s ease-out;
 }
 
 @keyframes move5 {
