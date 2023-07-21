@@ -1,0 +1,123 @@
+.box{
+    width: 250px;
+    height: 300px;
+    position: relative;
+    cursor: pointer;
+}
+
+.box img{
+    height: 100%;
+    width: 100%;
+}
+
+.image1{
+    scale: 1;
+    transform: translate(0px, 0px);
+    transition: all 1s ease;
+    position: absolute;
+    z-index: 1;
+}
+
+.image2{
+    scale: 0.1.1;
+    position: relative; 
+    transition: all 1s ease-in;
+}
+
+.box:hover .image1{
+    position: relative;
+    z-index: -1;
+    scale: 0.1.1;
+    transform: translate(0px, -1280px);
+}
+
+.box:hover{
+    background-color: chartreuse;
+}
+
+.box:hover .image2{
+    position: absolute;
+    scale: 1;
+    top: 0;
+    left: 0;
+}
+
+.ball2{
+display: block;
+background-color: aquamarine;
+height: 30px;
+width: 30px;
+position: absolute;
+top: 0;
+left: 0;
+z-index: 111;
+animation-name: move2;
+animation-direction: 1s;
+animation-timing-function: ease;
+animation-delay: 1s;
+transition: all 3s ease;
+}
+
+@keyframes move2{
+    0%{
+       margin-left:0px;
+      margin-top:0px;
+    }
+
+    25%{
+        left:250px;
+        top:300px
+     }
+     50%{
+        top:300px;
+        right: 250px;
+     }
+     75%{
+        right: 250px;
+        bottom: 300px;
+     }
+     100%{
+        bottom: 300px;
+        left: 0px;
+     }
+}
+
+.ball1{
+/* display: block; */
+background-color: rgb(255, 127, 127);
+height: 30px;
+width: 30px;
+position: absolute;
+top: 0;
+left:40px;
+z-index: 111;
+    animation-name: move;
+    animation-direction: normal;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+    transition: all 3s ease;
+}
+
+@keyframes move{
+    0%{
+       margin-left:0px;
+      margin-top:0px;
+    }
+
+    25%{
+        left:250px;
+        top:300px
+     }
+     50%{
+        top:300px;
+        right: 250px;
+     }
+     75%{
+        right: 250px;
+        bottom: 300px;
+     }
+     100%{
+        bottom: 300px;
+        left: 0px;
+     }
+}
