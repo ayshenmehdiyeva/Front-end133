@@ -15,17 +15,24 @@ body {
     width: 100%;
 }
 
+.heading{
+    color: #4E4E4E;
+text-align: center;
+font-family: Montserrat;
+font-size: 36px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px; /* 111.111% */
+}
+.item1, .item2,.item3, .item4,.item5, .item6,.item7, .item8{
+    position: relative;
+}
 .item1 {
     width: 100%;
     height: 700px;
     background-image: url(img/Layer\ 1\ 5.png);
     background-size: cover;
 }
-
-/* .item1, .item2, .item3, .item4, .item5, .item6, .item7{ 
-    position: relative;
-    box-sizing: border-box;
-}*/
 
 .item1 nav {
     width: 100%;
@@ -128,6 +135,7 @@ button:hover {
 
 .content .text h2 {
     font-size: 35px;
+    color: #fff;
 }
 
 .content .text h1 {
@@ -200,12 +208,16 @@ button[type="button"] {
 
 .item2 {
     width: 100%;
+   /* padding: 0px;
+    margin: 0%;*/
 }
 
 
 
 .rows {
     width: 100%;
+    padding: 0%;
+    margin: 0%;
 }
 
 .item3 {
@@ -322,22 +334,31 @@ button[type="button"] {
 
 .item6 {
     width: 100%;
-    box-sizing: border-box;
-    height: 900px;
+    height: 800px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .table {
+    position: relative;
     width: 160px;
     height: 450px;
+    margin: auto;
     box-sizing: border-box;
-    display: grid;
-    gap: 20px;
-    grid-template-rows: auto auto;
-    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+.table .row1,.table .row2{
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
 .box h5 {
     color: #717171;
@@ -380,17 +401,22 @@ button[type="button"] {
 
 .image {
     position: relative;
+    height: 217px;
+    width: 270px;
 }
 
-.image img {
-    width: 263px;
-    height: 208px;
+.image img{
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
 .image .datetime {
     position: absolute;
     background: #203E38;
+    right: 0px;
+    top:0px;
+    padding:5px 12px ;
 }
 
 
@@ -410,7 +436,7 @@ button[type="button"] {
 
 .item5 {
     width: 100%;
-    height: 970px;
+    height: 1000px;
     background-color: #E9EDEF;
     display: flex;
     flex-direction: column;
@@ -420,7 +446,7 @@ button[type="button"] {
 
 .item5 .content {
     width: 103%;
-    height: 100%;
+    height: 80%;
     /* background-color: #3997f6; */
     display: flex;
     flex-direction: column;
@@ -430,8 +456,8 @@ button[type="button"] {
 }
 
 .grids {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 80%;
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto auto auto;
@@ -479,12 +505,10 @@ button[type="button"] {
 
 .item7 {
     width: 100%;
-    height: 900px;
+    height: 850px;
     background-size: cover;
     background-image: url(./img/Layer\ 333.png);
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+
 }
 
 .item7 .content-slider {
@@ -498,6 +522,8 @@ button[type="button"] {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding: 0%;
+    box-sizing: border-box;
 }
 
 .item7 .heading {
@@ -511,7 +537,7 @@ button[type="button"] {
 .item7 .heading h3 {
     color: #ffffff;
     text-align: center;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-size: 36px;
     font-style: normal;
     font-weight: 400;
@@ -519,6 +545,29 @@ button[type="button"] {
     /* 111.111% */
 }
 
+.item7 .info{
+    text-align: center;
+}
+
+.item7 .info h4{
+    color: #18CFAB;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27px; /* 168.75% */
+    text-transform: uppercase;
+}
+
+.item7 .info p{
+    color: #BBB;
+    font-family: 'Montserrat', sans-serif;
+font-size: 13px;
+font-style: normal;
+font-weight: 300;
+line-height: 27px;
+}
 .item7-text {
     padding: 50px;
     width: 1160px;
@@ -603,13 +652,13 @@ button[type="button"] {
 
 .img3-1 {
     width: 103px;
-    height: 120px;
+    height: 100px;
     display: flex;
     gap: 3px;
 }
 .img3-2 {
     width: 210px;
-    height: 230px;
+    height: 200px;
     display: grid;
     gap: 3px;
     grid-template-rows: auto auto auto;
@@ -618,7 +667,7 @@ button[type="button"] {
 
 .img3-2 img,
 .img3-1 img {
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
 }
 
