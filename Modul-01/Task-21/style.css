@@ -1,24 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-* {
+
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
 
-body {
+/* body { 
     width: 100%;
-}
+}*/
 
 .container {
     width: 100%;
 }
 
 .heading{
-    color: #4E4E4E;
+color: #4E4E4E;
 text-align: center;
-font-family: Montserrat;
+font-family: 'Montserrat', sans-serif;
 font-size: 36px;
 font-style: normal;
 font-weight: 400;
@@ -39,7 +41,7 @@ line-height: 40px; /* 111.111% */
     height: 75px;
     display: flex;
     justify-content: space-around;
-    background-color: rgba(0, 0, 0, 0.158);
+    background-color: rgba(50, 50, 50, 0.448);
 }
 
 .item1 nav ul {
@@ -51,7 +53,7 @@ line-height: 40px; /* 111.111% */
 
 .item1 nav ul li {
     /* border: 1px solid #fff; */
-    margin-left: 20px;
+    margin-left: 10px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -208,10 +210,8 @@ button[type="button"] {
 
 .item2 {
     width: 100%;
-   /* padding: 0px;
-    margin: 0%;*/
+    
 }
-
 
 
 .rows {
@@ -223,28 +223,31 @@ button[type="button"] {
 .item3 {
     width: 100%;
     height: 480px;
+    background-color: transparent;
 }
 
 .services {
     display: flex;
     flex-direction: column;
-    width: 771px;
-    /* border: 1px solid #777777; */
+    justify-content: center;
+    align-items: center;
+    width: 60%;
     padding: 0px;
     gap: 0px;
 }
 
 .services ul {
+    height: 56px;
+    width: 100%;
     list-style: none;
     display: flex;
-    height: 56px;
-    padding: 0px;
-    width: 100%;
+    padding: 0%;
+    
 }
 
 .services ul li {
     color: #000;
-    padding: 5px 7px;
+    padding: 5px 10px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -271,15 +274,18 @@ button[type="button"] {
 
 .item3 .content {
     width: 100%;
-    height: 100%;
     height: 136px;
+    padding: 0%;
     display: flex;
     flex-direction: row;
-    padding: 0px;
+    
 }
 
 .item3 .content p {
+    text-align: left;
+    /* width: 100%; */
     padding: 5px;
+    box-sizing: border-box;
     color: #777;
     font-family: 'Montserrat', sans-serif;
     font-size: 13.645px;
@@ -336,30 +342,43 @@ button[type="button"] {
     width: 100%;
     height: 800px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.table {
-    position: relative;
-    width: 160px;
-    height: 450px;
-    margin: auto;
-    box-sizing: border-box;
-    gap: 10px;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* background-color: #18cfab; */
+}
+.table{
+    width: 90%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    margin-bottom: 50px;
+    /* background-color: crimson; */
 }
 
-.table .row1,.table .row2{
-    display: flex;
-    gap: 10px;
-    flex-direction: row;
-    flex-wrap: wrap;
+.table .box{
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+    box-sizing: border-box;
 }
-
+.box .image, .image img{
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+.image{
+    position: relative;
+   
+}
+.image .datetime {
+    position: absolute;
+    background: #203E38;
+    top: 7px;
+    right: 7px;
+    padding:3% 5%;
+}
 .box h5 {
     color: #717171;
     text-align: center;
@@ -367,8 +386,9 @@ button[type="button"] {
     font-size: 17.988px;
     font-style: normal;
     font-weight: 700;
-    line-height: 38.942px;
-    /* 216.481% */
+    margin: 0%;
+    padding: 0%;
+   
 }
 
 .box p {
@@ -378,49 +398,15 @@ button[type="button"] {
     font-size: 13.991px;
     font-style: normal;
     font-weight: 300;
-    line-height: 38.942px;
-    /* 278.333% */
+    margin: 0%;
+    padding: 0%;
+
 }
 
-.box h5 {
-    color: #717171;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 17.988px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 38.942px;
-    /* 216.481% */
-    cursor: pointer;
-    transition: all .4s ease;
-}
 
 .box h5:hover {
     color: #18cfab;
 }
-
-.image {
-    position: relative;
-    height: 217px;
-    width: 270px;
-}
-
-.image img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.image .datetime {
-    position: absolute;
-    background: #203E38;
-    right: 0px;
-    top:0px;
-    padding:5px 12px ;
-}
-
-
-
 .datetime h5,
 .datetime p {
     color: #FFF;
@@ -430,7 +416,7 @@ button[type="button"] {
     font-style: normal;
     font-weight: 400;
     line-height: 25px;
-    /* 156.25% */
+
 }
 
 
@@ -473,11 +459,11 @@ button[type="button"] {
 .item5 ul {
     list-style: none;
     display: flex;
+    justify-content: center;
     height: 58px;
     width: 528px;
     padding: 0%;
     text-align: center;
-    border: 1px solid #DADADA;
 }
 
 .item5 ul li {
@@ -569,8 +555,8 @@ font-weight: 300;
 line-height: 27px;
 }
 .item7-text {
-    padding: 50px;
-    width: 1160px;
+    padding: 30px;
+    width: 80%;
     color: #D8D8D8;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -743,55 +729,3 @@ footer {
     align-items: center;
 }
 
-/**/
-
-
-
-
-
-
-/*
-.card:hover {
-    color: #fff;
-    transform: scale(1.025);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px
-}
-
-.card:hover .backgroundEffect {
-    bottom: 0;
-    height: 320px;
-    width: 100%;
-    position: absolute;
-    z-index: -1;
-    background: #1b9ce3;
-    animation: popBackground 0.3s ease-in
-}
-
-@keyframes popBackground {
-    0% {
-        height: 20px;
-        border-top-left-radius: 50%;
-        border-top-right-radius: 50%
-    }
-
-    50% {
-        height: 80px;
-        border-top-left-radius: 75%;
-        border-top-right-radius: 75%
-    }
-
-    75% {
-        height: 160px;
-        border-top-left-radius: 85%;
-        border-top-right-radius: 85%
-    }
-
-    100% {
-        height: 320px;
-        border-top-left-radius: 100%;
-        border-top-right-radius: 100%
-    }
-}
-
-
-*/
