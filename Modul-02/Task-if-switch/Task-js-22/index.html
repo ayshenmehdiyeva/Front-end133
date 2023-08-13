@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 26</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+     let date = prompt("bugunun tarixini  «YYYY.MM.DD» formatında daxil edin");
+   let secondpart = date.slice(date.indexOf(".")+1)
+let num1 = date.slice(0,date.indexOf("."));
+let num2 = secondpart.slice(0, secondpart.indexOf("."));
+let num3 = secondpart.slice(secondpart.indexOf(".")+1)
+ 
+/*switch (num2) {
+            case "01": console.log("Yanvar");
+                break;
+            case "02": console.log("Fevral");
+                break;
+            case "03": console.log("Mart");
+                break;
+            case "04": console.log("Aprel");
+                break;
+            case "05": console.log("May");
+                break;
+            case "06": console.log("İyun");
+                break;
+            case "07": console.log("İyul");
+                break;
+            case "08": console.log("Avqust");
+                break;
+            case "09": console.log("Sentyabr");
+                break;
+            case "10": console.log("Oktyabr");
+                break;
+            case "11": console.log("Noyabr");
+                break;
+            case "12": console.log("Dekabr");
+                break;
+            default: console.log("nömrəni səhv yazmisiz")
+        }*/
+        console.log(num3 +"."+ num2 +"."+ num1 +"-cu il")
+    </script>
+</body>
+
+</html>
