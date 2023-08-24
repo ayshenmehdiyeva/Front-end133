@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task function 07</title>
+</head>
+
+<body>
+    <script>
+        let ticket = prompt("zehmet olmasa 6 reqemli eded yazin");
+        let num1 = ticket.substring(0, 3);
+        let num2 = ticket.substring(3);
+        let numberone = +num1[0];
+        let numbertwo = +num1[1];
+        let numberthree = +num1[2];
+        let numberfore = +num2[0];
+        let numberfive = +num2[1];
+        let numbersix = +num2[2];
+        let plus1 = numberone + numbertwo + numberthree;
+        let plus2 = numberfore + numberfive + numbersix;
+       function islucky() {
+              if (plus1 == plus2) {
+                  console.log(true)
+              }
+              else {
+                  console.log(false)
+              }
+          }
+          islucky() 
+    </script>
+</body>
+
+</html>
