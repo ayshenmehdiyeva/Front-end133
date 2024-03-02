@@ -111,6 +111,7 @@ const Home = () => {
             <div className='popular-car'>
                 <div>Popular car</div>
                 <div className='view-all'><Link to="/category">View all</Link></div>
+                <div>hello</div>
             </div>
             <section>
                 <div className="row">
