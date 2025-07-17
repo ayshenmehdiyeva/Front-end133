@@ -167,7 +167,7 @@ object-fit: cover;
 }
 
 
-@media screen and (max-width:600px){
+@media screen and (max-width:800px){
 
     .col-sm-1 {
     width: calc(100%/12*1);

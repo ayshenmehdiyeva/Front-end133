@@ -1,17 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="slider.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="box">
-        <img class="image1" src="https://www.renderhub.com/3dseller/ice-age-character-sid/ice-age-character-sid-01.jpg" alt="">
-        <img  class="image2" src="https://animeshka.org/uploads/posts/2023-01/1674045278_animeshka-org-p-stokstaartje-ice-age-55.jpg" alt="">
-        <span class="ball1"></span>
-        <span class="ball2"></span>
+  <header>
+    <div class="icon"><img src="./image/Logo.webp" alt="" srcset=""></div>
+    <nav>
+      <ul>
+        <li class="navbar">
+          <a href="./index.html">Home</a>
+        </li>
+        <li class="navbar">
+          <a href="./collectionpage.html">Collection</a>
+          <div class="drop-down collection-height">
+            <div class="dropdown-content collection-content">
+              <div class="dropdown-content-left">
+                <ul>
+                  <li class="menu-name">Best Sellers</li>
+                  <li class="menu-name">New Arrival</li>
+                  <li class="menu-name">Top Trending</li>
+                  <li class="menu-name">On Sale</li>
+                </ul>
+              </div>
+              <div class="dropdown-content-right">
+                <div>
+                  <ul>
+                    <li class="menu-name">Collection page</li>
+                    <li><a> Collection left sidebar
+                      </a></li>
+                    <li> <a> Collection right sidebar
+                      </a></li>
+                    <li> <a>Collection top sidebar
+                      </a></li>
+                    <li> <a>Collection without sidebar
+                      </a></li>
+                    <li><a>Collection deals</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <ul>
+                    <li class="menu-name">Collection page</li>
+                    <li><a> Collection left sidebar
+                      </a></li>
+                    <li> <a> Collection right sidebar
+                      </a></li>
+                    <li> <a>Collection top sidebar
+                      </a></li>
+                    <li> <a>Collection without sidebar
+                      </a></li>
+                    <li><a>Collection deals</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <ul>
+                    <li class="menu-name">Collection page</li>
+                    <li><a> Collection left sidebar
+                      </a></li>
+                    <li> <a> Collection right sidebar
+                      </a></li>
+                    <li> <a>Collection top sidebar
+                      </a></li>
+                    <li> <a>Collection without sidebar
+                      </a></li>
+                    <li><a>Collection deals</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="navbar">
+          <a href="./productdetail.html">Products</a>
+          <div class="drop-down product-height">
+            <div class="dropdown-content product-content">
+              <div class="dropdown-content-right">
+                <div>
+                  <ul>
+                    <li class="menu-name">Collection page</li>
+                    <li><a> Collection left sidebar
+                      </a></li>
+                    <li> <a> Collection right sidebar
+                      </a></li>
+                    <li> <a>Collection top sidebar
+                      </a></li>
+                    <li> <a>Collection without sidebar
+                      </a></li>
+                    <li><a>Collection deals</a></li>
+                    <li> <a>Collection without sidebar
+                      </a></li>
+                    <li><a>Collection deals</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <ul>
+                    <li class="menu-name">Collection page</li>
+                    <li><a> Collection left sidebar
+                      </a></li>
+                    <li> <a> Collection right sidebar
+                      </a></li>
+                    <li> <a>Collection top sidebar
+                      </a></li>
+                    <li> <a>Collection without sidebar
+                      </a></li>
+                    <li><a>Collection deals</a></li>
+                    <li> <a>Collection without sidebar
+                      </a></li>
+                    <li><a>Collection deals</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <ul>
+                    <li class="menu-name">Collection page</li>
+                    <li><a> Collection left sidebar
+                      </a></li>
+                    <li> <a> Collection right sidebar
+                      </a></li>
+                    <li> <a>Collection top sidebar
+                      </a></li>
+                    <li> <a>Collection without sidebar
+                      </a></li>
+                    <li><a>Collection deals</a></li>
+                    <li> <a>Collection without sidebar
+                      </a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="dropdown-content-left">
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="product-slider">
+                        <p class="menu-name">product-slider</p>
+                        <img src="./sid-image/dropdown.webp">
+                        <p class="product-slider-name">Lorem Ipsum dolar</p>
+                        <p class="product-slider-price">$3500</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="product-slider">
+                        <p class="menu-name">product-slider</p>
+                        <img src="./sid-image/12_380x.jpg">
+                        <p class="product-slider-name">Lorem Ipsum dolar</p>
+                        <p class="product-slider-price">$3500</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="product-slider">
+                        <p class="menu-name">product-slider</p>
+                        <img src="./sid-image/3_768x.webp">
+                        <p class="product-slider-name">Lorem Ipsum dolar</p>
+                        <p class="product-slider-price">$3500</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="autoplay-progress">
+                    <svg viewBox="0 0 48 48">
+                      <circle cx="24" cy="24" r="20"></circle>
+                    </svg>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="navbar about">
+          <a href="./aboutus.html">Other pages</a>
+          <div class="about-drop-down about-position">
+            <div>
+              <ul class="about-height">
+                <li><a>404 Error</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Contact Us</a></li>
+                <li><a>FAQs Page</a></li>
+                <li><a>Store Direction Page</a></li>
+                <li><a>Store Locations Page</a></li>
+                <li><a>Testimonials Page</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="navbar about">
+          <a href="./blogdetail.html">Blog</a>
+          <div class="about-drop-down blog-position">
+            <div>
+              <ul class="blog-height">
+                <li><a>Blog Left Sidebar</a></li>
+                <li><a>Blog Right Sidebar</a></li>
+                <li><a>Blog Without Sidebar</a></li>
+                <li><a>Blog List View</a></li>
+                <li><a>Blog Column View</a></li>
+                <li><a>Blog Detail Left Sidebar</a></li>
+                <li><a>Blog Detail Right Sidebar</a></li>
+                <li><a>Blog Detail Without Sidebar</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="search">
+      <div><i class="fa-solid fa-magnifying-glass"></i></div>
+      <div><i class="fa-regular fa-user"></i></div>
+      <div><i class="fa-regular fa-star"></i></div>
+      <div><i class="fa-solid fa-cart-shopping"></i></div>
     </div>
+  </header>
+ <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./sid-image/s-5-1_2048x.webp" alt="" srcset=""></div>
+      <div class="swiper-slide"><img src="./sid-image/s-5-2_2048x.webp" alt="" srcset=""></div>
+      <div class="swiper-slide"><img src="./sid-image/s-5-1_2048x.webp" alt="" srcset=""></div>
+      <div class="swiper-slide"><img src="./sid-image/s-5-2_2048x.webp" alt="" srcset=""></div>
+      <div class="swiper-slide"><img src="./sid-image/s-5-1_2048x.webp" alt="" srcset=""></div>
+      <div class="swiper-slide"><img src="./sid-image/s-5-2_2048x.webp" alt="" srcset=""></div>
+      <div class="swiper-slide"><img src="./sid-image/s-5-1_2048x.webp" alt="" srcset=""></div>
+      <div class="swiper-slide"><img src="./sid-image/s-5-2_2048x.webp" alt="" srcset=""></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+
+  <!-- Initialize Swiper -->
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 4,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    
+  </script>
+
 </body>
 </html>
