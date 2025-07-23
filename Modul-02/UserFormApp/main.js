@@ -10,28 +10,25 @@ let tbody = document.querySelector("tbody");
 
 let localeUsers = JSON.parse(localStorage.getItem("users"))
 let localID = localStorage.getItem("usersId")
-render(localeUsers)
 
-
-
-let users = [...localeUsers];
-let id = localID;
+let users = localeUsers ? [...localeUsers] : [];
+let id = localID ;
 let globalId = 0;
+render(localeUsers)
 
 addbtn.addEventListener("click", function (e) {
     e.preventDefault()
     users.push({
         id: ++id,
         fullname: fullnameInput.value,
-        useremail: useremail.value,
+        useremail: useremailInput.value,
         password: passwordInput.value
     });
     render(users)
     fullnameInput.value = "";
-    useremail.value = "";
+    useremailInput.value = "";
     passwordInput.value = "";
-    localStorage.setItem("users", JSON.stringify(users))
-    localStorage.setItem("usersId", (id))
+    localStorage.setItem("usersId", id)
 
 })
 
@@ -83,9 +80,8 @@ search.addEventListener("keyup", function (e) {
 
 function render(param) {
     tbody.innerHTML = "";
-    param.forEach(user => {
-        if (user.fullname !== "" && user.useremail !== "") {
-            tbody.innerHTML += `<tr>
+    param?.forEach(user => {
+        tbody.innerHTML += `<tr>
                 <td scope="row">${user.id}</td>
                 <td>${user.fullname}</td>
                 <td>${user.useremail}</td>
@@ -93,8 +89,10 @@ function render(param) {
                     <button class="btn btn-danger" onclick="Delete(${user.id})" >delete</button>
                     <button class="btn btn-secondary" onclick="Update(${user.id})">update</button>
                 </td>
-            </tr>`}
+            </tr>`
 
     })
+
+    users ? localStorage.setItem("users", JSON.stringify(users)) : null;
 }
 

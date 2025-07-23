@@ -67,10 +67,12 @@ pauseButton.addEventListener("click", function () {
 let num = 0;
 
 nextButton.addEventListener("click", () => {
-    if (num === 5) {
+    if (num === 4) {
         num = -1
     }
     num++
+    console.log(songsList[num])
+    console.log("sra nomresi " + num)
     render(songsList[num])
 })
 
@@ -78,7 +80,9 @@ prevButton.addEventListener("click", () => {
     if (num === 0) {
         num = 5
     }
-    num--
+    num--;
+    console.log(songsList[num])
+    console.log("sra nomresi " + num)
     render(songsList[num])
 })
 
