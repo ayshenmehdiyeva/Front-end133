@@ -51,7 +51,6 @@ const songsList = [
 ];
 
 playButton.addEventListener("click", function () {
-
     audio.play()
     pauseButton.classList.remove("hide");
     playButton.classList.add("hide");
@@ -86,11 +85,41 @@ prevButton.addEventListener("click", () => {
     render(songsList[num])
 })
 
+repeatButton.addEventListener("click", () => {
+    audio.addEventListener("ended", () => {
+        if (num === 4) {
+            num = -1
+        }
+        num++
+        render(songsList[num])
+    })
+    repeatButton.style.color = "#000"
+    shuffleButton.style.color = "#949494"
+})
+
+shuffleButton.addEventListener("click", (e) => {
+    shuffleButton.style.color = "#000";
+    repeatButton.style.color = "#949494"
+    let shuffleList = [...songsList]
+    audio.addEventListener("ended", () => {
+        shuffleList = shuffleList.filter(item => item.link !== shuffleList[num].link)
+        if (shuffleList.length === 0) {
+            shuffleList = [...songsList]
+        }
+        num = Math.floor(Math.random() * (songArtist.length - 1))
+        render(shuffleList[num])
+    })
+
+
+})
+
+
+
 function render(param) {
     songImage.src = `./images/${param.image}`;
     songName.innerText = `${param.name}`;
     songArtist.innerText = `${param.artist}`;
-    audio.src = `./audio/${param.link}`;
+    audio.src = `./audio/${param.link}`
     audio.play();
     pauseButton.classList.remove("hide")
     playButton.classList.add("hide")
